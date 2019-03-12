@@ -1,3 +1,5 @@
+var x, y, i, j = -1, k;
+
 setInterval(function(){
 	x = getRandomInt(0, 9);
 	y = 0;
@@ -25,6 +27,14 @@ setInterval(function(){
 	document.querySelector('.enemy4').setAttribute('x',x);
 	document.querySelector('.enemy4').setAttribute('y',y);
 },1000)
+
+setInterval(function(){
+	x = 4;
+	j++;
+	document.querySelector('.test').setAttribute('x',x);
+	document.querySelector('.test').setAttribute('j',j);
+},1000)
+
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);

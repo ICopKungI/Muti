@@ -53,6 +53,16 @@ div.enemy4{
 	transition:all .3s;
 }
 
+div.test{
+	width:var(--w);
+	height:var(--h);
+	background-color: blue;
+	position:fixed;
+  	top:var(--x);
+  	left:var(--j);
+	transition:all .5s;
+}
+
 div[x = '0']{--x: 0%;}
 div[x = '1']{--x: 10%;}
 div[x = '2']{--x: 20%;}
@@ -74,3 +84,14 @@ div[y = '6']{--y: 60%;}
 div[y = '7']{--y: 70%;}
 div[y = '8']{--y: 80%;}
 div[y = '9']{--y: 90%;}
+
+div[j = '0']{--j: 0%;}
+div[j = '1']{--j: 10%;}
+div[j = '2']{--j: 20%;}
+div[j = '3']{--j: 30%;}
+div[j = '4']{--j: 40%;}
+div[j = '5']{--j: 50%;}
+div[j = '6']{--j: 60%;}
+div[j = '7']{--j: 70%;}
+div[j = '8']{--j: 80%;}
+div[j = '9']{--j: 90%;}
