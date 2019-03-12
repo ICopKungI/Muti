@@ -13,14 +13,14 @@ setInterval(function(){
 },1000)
 
 setInterval(function(){
-	x = 0;
+	x = 9;
 	y = getRandomInt(0, 9);
 	document.querySelector('.enemy3').setAttribute('x',x);
 	document.querySelector('.enemy3').setAttribute('y',y);
 },1000)
 
 setInterval(function(){
-	x = 9;
+	x = 0;
 	y = getRandomInt(1, 10);
 	document.querySelector('.enemy4').setAttribute('x',x);
 	document.querySelector('.enemy4').setAttribute('y',y);
