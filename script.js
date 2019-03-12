@@ -31,6 +31,10 @@ setInterval(function(){
 setInterval(function(){
 	x = 4;
 	j++;
+	if (j > 9) {
+		x = 10;
+		j = 10;
+	}
 	document.querySelector('.test').setAttribute('x',x);
 	document.querySelector('.test').setAttribute('j',j);
 },1000)
