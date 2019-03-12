@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img src="4rhn0xqvhy911.png">
+	<script>
+		document.onkeypress = function(i){
+  			if(window.event.keyCode == 100){
+  				y = -1;
+  				document.querySelector('img').setAttribute('y',y);
+  			}
+   			if(window.event.keyCode == 119){
+   				x = 1;
+   				document.querySelector('img').setAttribute('x',x);
+  			}
+  			if(window.event.keyCode == 115){
+  				y = 1;
+  				document.querySelector('img').setAttribute('y',y);
+  			}
+  			if(window.event.keyCode == 97){
+  				x = -1;
+  				document.querySelector('img').setAttribute('x',x);
+  			}
+  		};
+	</script>
+	<style>
+		img{
+			height: var(--x);
+			width: var(--y);
+		}
+		img[x = '1']{--x: 800px;}
+		img[x = '-1']{--x: 400px;}
+		img[y = '1']{--y: 300px;}
+		img[y = '-1']{--y: 150px;}
+	</style>
+
+</body>
+</html>
