@@ -24,7 +24,7 @@ setInterval(function(){
 	document.querySelector('.random1').setAttribute('y',y);
 	move_1++;
 	move_2++;
-},1000)
+}, getinterval(2000))
 
 setInterval(function(){
 	x = getRandomInt(1, 10);
@@ -92,6 +92,9 @@ setInterval(function(){
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
+}
+function getinterval(num){
+	return num/2;
 }
 
 //เช็คปุ่ม
