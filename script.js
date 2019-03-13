@@ -1,10 +1,10 @@
-<<<<<<< HEAD
-var x, y, i, j = -1, k = 0, z;
+//<<<<<<< HEAD
+var x, y, i, j = -1, k = 0, z,time = 0;
 //random
-=======
+//=======
 var x, y, i, j = -1, k;
 
->>>>>>> da149c64473fced7fb2053d6689dbdf2babd7987
+//>>>>>>> da149c64473fced7fb2053d6689dbdf2babd7987
 setInterval(function(){
 	x = getRandomInt(0, 9);
 	y = 0;
@@ -39,7 +39,7 @@ setInterval(function(){
 	document.querySelector('.random4').setAttribute('y',y);
 },1000)
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //
 
 /*setInterval(function(){
@@ -52,7 +52,7 @@ setInterval(function(){
 		document.querySelector(name).setAttribute('x',j);
 	}
 },1000)*/
-=======
+/*=======
 setInterval(function(){
 	x = 4;
 	j++;
@@ -64,8 +64,26 @@ setInterval(function(){
 	document.querySelector('.test').setAttribute('j',j);
 },1000)
 
->>>>>>> da149c64473fced7fb2053d6689dbdf2babd7987
+>>>>>>> da149c64473fced7fb2053d6689dbdf2babd7987*/
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
+//เช็คปุ่ม
+document.onkeydown = function(i){
+			if(event.keyCode == 32){ 
+				timep();
+			}
+};
+function timep(){
+	cd = setInterval(function(){
+		// เพิ่มเวลา
+		time++;
+		// อัพเดทเวลา
+		updateTime();
+},1000)}
+ function updateTime(){
+    	// แสดงเวลา
+    	theTime.innerText = time;
+}
+	
