@@ -1,79 +1,105 @@
-//<<<<<<< HEAD
-var x, y, i, j = -1, k = 0, z,time = 0;
+var x, y, i, count = 0;
+var move_3 = 9, move_4 = -1, point_start_3, point_start_4 = 10;
+var move_1 = 0, move_2 = 10, point_start_1, point_start_2 = 10;
+var move_5 = 9, move_6 = -1, point_start_5, point_start_6 = 10;
+var move_7 = 0, move_8 = 10, point_start_7, point_start_8 = 10;
 //random
-//=======
-var x, y, i, j = -1, k;
 
-//>>>>>>> da149c64473fced7fb2053d6689dbdf2babd7987
 setInterval(function(){
 	x = getRandomInt(0, 9);
 	y = 0;
+	if ((move_1 == 0) || (move_1 > 9)) {
+		point_start_1 = x;
+		move_1 = 0;
+	}
+	if ((count%5 == 0) && (move_1 == 5)) {
+		point_start_2 = x;
+		count = 0;
+		move_2 = 0;
+	}
+	document.querySelector('.enemy1').setAttribute('x',point_start_1);
+	document.querySelector('.enemy1').setAttribute('y',move_1);
+	document.querySelector('.enemy2').setAttribute('x',point_start_2);
+	document.querySelector('.enemy2').setAttribute('y',move_2);
 	document.querySelector('.random1').setAttribute('x',x);
 	document.querySelector('.random1').setAttribute('y',y);
+	move_1++;
+	move_2++;
+	count++;
 },1000)
 
 setInterval(function(){
 	x = getRandomInt(1, 10);
 	y = 9;
+	if ((move_3 == 9) || (move_3 < 0)) {
+		point_start_3 = x;
+		move_3 = 9;
+	}
+	if ((count%5 == 0) && (move_3 == 5)) {
+		point_start_4 = x;
+		move_4 = 9;
+	}
+	document.querySelector('.enemy3').setAttribute('x',point_start_3);
+	document.querySelector('.enemy3').setAttribute('y',move_3);
+	document.querySelector('.enemy4').setAttribute('x',point_start_4);
+	document.querySelector('.enemy4').setAttribute('y',move_4);
 	document.querySelector('.random2').setAttribute('x',x);
 	document.querySelector('.random2').setAttribute('y',y);
+	move_3--;
+	move_4--;
 },1000)
 
 setInterval(function(){
 	x = 9;
 	y = getRandomInt(0, 9);
-	j++;
-	if (j == 0) {
-		z = y;
+	if ((move_5 == 9) || (move_5 < 0)) {
+		point_start_5 = y;
+		move_5 = 9;
 	}
+	if ((count%5 == 0) && (move_5 == 5)) {
+		point_start_6 = y;
+		move_6 = 9;
+	}
+	document.querySelector('.enemy5').setAttribute('x',move_5);
+	document.querySelector('.enemy5').setAttribute('y',point_start_5);
+	document.querySelector('.enemy6').setAttribute('x',move_6);
+	document.querySelector('.enemy6').setAttribute('y',point_start_6);
 	document.querySelector('.random3').setAttribute('x',x);
 	document.querySelector('.random3').setAttribute('y',y);
-	document.querySelector('.test').setAttribute('x',j);
-	document.querySelector('.test').setAttribute('y',z);
+	move_5--;
+	move_6--;
 },1000)
 
 setInterval(function(){
 	x = 0;
 	y = getRandomInt(1, 10);
+	if ((move_7 == 0) || (move_7 > 9)) {
+		point_start_7 = y;
+		move_7 = 0;
+	}
+	if ((count%5 == 0) && (move_7 == 4)) {
+		point_start_8 = y;
+		move_8 = 0;
+	}
+	document.querySelector('.enemy7').setAttribute('x',move_7);
+	document.querySelector('.enemy7').setAttribute('y',point_start_7);
+	document.querySelector('.enemy8').setAttribute('x',move_8);
+	document.querySelector('.enemy8').setAttribute('y',point_start_8);
 	document.querySelector('.random4').setAttribute('x',x);
 	document.querySelector('.random4').setAttribute('y',y);
+	move_7++;
+	move_8++;
 },1000)
 
-//<<<<<<< HEAD
-//
-
-/*setInterval(function(){
-	j++
-	for (i = 0; i < 3; i++) {
-		if (j > 9) {
-			break;
-		}
-		var name = '.ansbox' + i;
-		document.querySelector(name).setAttribute('x',j);
-	}
-},1000)*/
-/*=======
-setInterval(function(){
-	x = 4;
-	j++;
-	if (j > 9) {
-		x = 10;
-		j = 10;
-	}
-	document.querySelector('.test').setAttribute('x',x);
-	document.querySelector('.test').setAttribute('j',j);
-},1000)
-
->>>>>>> da149c64473fced7fb2053d6689dbdf2babd7987*/
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 //เช็คปุ่ม
 document.onkeydown = function(i){
-			if(event.keyCode == 32){ 
-				timep();
-			}
+	if(event.keyCode == 32){ 
+		timep();
+	}
 };
 function timep(){
 	cd = setInterval(function(){
@@ -86,4 +112,3 @@ function timep(){
     	// แสดงเวลา
     	theTime.innerText = time;
 }
-	
