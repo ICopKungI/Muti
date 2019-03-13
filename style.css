@@ -1,56 +1,97 @@
 :root{
-	--w:10%;
-	--h:10vh;
+    --w:10%;
+    --h:10vh;
 }
 body{
-	font-size:0;
-	margin:0;
+    font-size:0;
+    margin:0;
 }
+
 #map div{
-	width:var(--w);
-	height:var(--h);
-	display:inline-block;
-	background-color: white;
-  	box-shadow: 0px 0px 5px black;
+    width:10%;
+    height:10vh;
+    display:inline-block;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
 }
-div.enemy1{
-	width:var(--w);
-	height:var(--h);
-	background-color: red;
-	position:fixed;
-  	top:var(--x);
-  	left:var(--y);
-	transition:all .3s;
-}
-
-div.enemy2{
-	width:var(--w);
-	height:var(--h);
-	background-color: red;
-	position:fixed;
-  	top:var(--x);
-  	left:var(--y);
-	transition:all .3s;
+div.random1{
+    width:var(--w);
+    height:var(--h);
+    background-color: red;
+    position:fixed;
+    top:var(--x);
+    left:var(--y);
+    transition:all .3s;
 }
 
-div.enemy3{
-	width:var(--w);
-	height:var(--h);
-	background-color: red;
-	position:fixed;
-  	top:var(--x);
-  	left:var(--y);
-	transition:all .3s;
+div.random2{
+    width:var(--w);
+    height:var(--h);
+    background-color: red;
+    position:fixed;
+    top:var(--x);
+    left:var(--y);
+    transition:all .3s;
 }
 
-div.enemy4{
-	width:var(--w);
-	height:var(--h);
-	background-color: red;
-	position:fixed;
-  	top:var(--x);
-  	left:var(--y);
-	transition:all .3s;
+div.random3{
+    width:var(--w);
+    height:var(--h);
+    background-color: red;
+    position:fixed;
+    top:var(--x);
+    left:var(--y);
+    transition:all .3s;
+}
+
+div.random4{
+    width:var(--w);
+    height:var(--h);
+    background-color: red;
+    position:fixed;
+    top:var(--x);
+    left:var(--y);
+    transition:all .3s;
+}
+
+div.test{
+    width:var(--w);
+    height:var(--h);
+    background-color: blue;
+    position:fixed;
+    top:var(--x);
+    left:var(--y);
+    transition:all .5s;
+}
+
+div.ansbox0{
+    width:var(--w);
+    height:var(--h);
+    background-color: yellow;
+    position:fixed;
+    top: var(--x);
+    left: 50%;
+    transition:all .5s;
+}
+
+div.ansbox1{
+    width:var(--w);
+    height:var(--h);
+    background-color: blue;
+    position:fixed;
+    top: var(--x);
+    left: 50%;
+    transition:all 1s;
+}
+
+div.ansbox2{
+    width:var(--w);
+    height:var(--h);
+    background-color: black;
+    position:fixed;
+    top: var(--x);
+    left: 50%;
+    transition:all 1.5s;
 }
 
 div.test{
