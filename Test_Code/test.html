@@ -6,20 +6,20 @@
 <body>
 	<img src="4rhn0xqvhy911.png">
 	<script>
-		document.onkeypress = function(i){
-  			if(window.event.keyCode == 100){
+		document.onkeydown = function(i){
+  			if(window.event.keyCode == 37){
   				y = -1;
   				document.querySelector('img').setAttribute('y',y);
   			}
-   			if(window.event.keyCode == 119){
+   			if(window.event.keyCode == 38){
    				x = 1;
    				document.querySelector('img').setAttribute('x',x);
   			}
-  			if(window.event.keyCode == 115){
+  			if(window.event.keyCode == 39){
   				y = 1;
   				document.querySelector('img').setAttribute('y',y);
   			}
-  			if(window.event.keyCode == 97){
+  			if(window.event.keyCode == 40){
   				x = -1;
   				document.querySelector('img').setAttribute('x',x);
   			}
