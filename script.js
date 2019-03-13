@@ -1,9 +1,9 @@
-var x, y, i, count = 0;
+var x, y, i, time = 0;
 var move_3 = 9, move_4 = -1, point_start_3, point_start_4 = 10;
 var move_1 = 0, move_2 = 10, point_start_1, point_start_2 = 10;
 var move_5 = 9, move_6 = -1, point_start_5, point_start_6 = 10;
 var move_7 = 0, move_8 = 10, point_start_7, point_start_8 = 10;
-//random
+//random&enemy
 
 setInterval(function(){
 	x = getRandomInt(0, 9);
@@ -12,9 +12,8 @@ setInterval(function(){
 		point_start_1 = x;
 		move_1 = 0;
 	}
-	if ((count%5 == 0) && (move_1 == 5)) {
+	if (move_1 == 4) {
 		point_start_2 = x;
-		count = 0;
 		move_2 = 0;
 	}
 	document.querySelector('.enemy1').setAttribute('x',point_start_1);
@@ -25,7 +24,6 @@ setInterval(function(){
 	document.querySelector('.random1').setAttribute('y',y);
 	move_1++;
 	move_2++;
-	count++;
 },1000)
 
 setInterval(function(){
@@ -35,7 +33,7 @@ setInterval(function(){
 		point_start_3 = x;
 		move_3 = 9;
 	}
-	if ((count%5 == 0) && (move_3 == 5)) {
+	if (move_3 == 5) {
 		point_start_4 = x;
 		move_4 = 9;
 	}
@@ -56,7 +54,7 @@ setInterval(function(){
 		point_start_5 = y;
 		move_5 = 9;
 	}
-	if ((count%5 == 0) && (move_5 == 5)) {
+	if (move_5 == 5) {
 		point_start_6 = y;
 		move_6 = 9;
 	}
@@ -77,7 +75,7 @@ setInterval(function(){
 		point_start_7 = y;
 		move_7 = 0;
 	}
-	if ((count%5 == 0) && (move_7 == 4)) {
+	if (move_7 == 4) {
 		point_start_8 = y;
 		move_8 = 0;
 	}
@@ -95,8 +93,15 @@ setInterval(function(){
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
+
 //เช็คปุ่ม
-document.onkeydown = function(i){
+setInterval(function(){
+		// เพิ่มเวลา
+		++time;
+		// อัพเดทเวลา
+		theTime.innerText = time;
+},1000)
+/*document.onkeydown = function(i){
 	if(event.keyCode == 32){ 
 		timep();
 	}
@@ -111,4 +116,4 @@ function timep(){
  function updateTime(){
     	// แสดงเวลา
     	theTime.innerText = time;
-}
+}*/

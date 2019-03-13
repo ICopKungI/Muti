@@ -7,9 +7,14 @@ body{
     margin:0;
 }
 h2{
-    color:green;
+	background-color: black;
+    color:white;
+    border-radius: 8%;
     font-size:30px;
-    margin-left:50%;    
+    position:fixed;
+    margin-left: 43.5%;
+    margin-right: 43.5%;
+    padding: 10px;
 }
 #map div{
     width:10%;
@@ -21,9 +26,9 @@ h2{
 div.random1{
     width:var(--w);
     height:var(--h);
-    background-color: red;
     position:fixed;
     top:var(--y);
+    background-color:red;
     left:var(--x);
     transition:all .3s;
 }
@@ -31,9 +36,9 @@ div.random1{
 div.random2{
     width:var(--w);
     height:var(--h);
-    background-color: red;
     position:fixed;
     top:var(--y);
+    background-color:red;
     left:var(--x);
     transition:all .3s;
 }
@@ -41,9 +46,9 @@ div.random2{
 div.random3{
     width:var(--w);
     height:var(--h);
-    background-color: red;
     position:fixed;
     top:var(--y);
+    background-color:red;
     left:var(--x);
     transition:all .3s;
 }
@@ -51,9 +56,9 @@ div.random3{
 div.random4{
     width:var(--w);
     height:var(--h);
-    background-color: red;
     position:fixed;
     top:var(--y);
+    background-color:red;
     left:var(--x);
     transition:all .3s;
 }
