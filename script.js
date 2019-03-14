@@ -466,3 +466,32 @@ function timep(){
     	// แสดงเวลา
     	theTime.innerText = time;
 }*/
+//###### Player Move ######
+var xx = 5, yy = 5;
+document.onkeydown = function(){
+  if(window.event.keyCode == 37){
+    xx --;
+    if (xx < 0) {
+    	xx == 9;
+    }
+    char.setAttribute('x', xx);
+  }
+  else if(window.event.keyCode == 38){
+    yy --;
+    char.setAttribute('y', yy);
+  }
+  else if(window.event.keyCode == 39){
+    xx ++;
+    char.setAttribute('x', xx);
+  }
+  else if(window.event.keyCode == 40){
+    yy ++;
+    char.setAttribute('y', yy);
+  }
+}
+
+setInterval(function(){
+	var char = document.querySelector(".player");
+	char.setAttribute('x', xx);
+    char.setAttribute('y', yy);
+})
