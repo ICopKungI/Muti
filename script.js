@@ -467,31 +467,42 @@ function timep(){
     	theTime.innerText = time;
 }*/
 //###### Player Move ######
+var char = document.querySelector(".player");
 var xx = 5, yy = 5;
 document.onkeydown = function(){
+	var char = document.querySelector(".player");
   if(window.event.keyCode == 37){
-    xx --;
+    xx--;
     if (xx < 0) {
-    	xx == 9;
+    	xx = 0;
     }
     char.setAttribute('x', xx);
   }
   else if(window.event.keyCode == 38){
-    yy --;
+    yy--;
+    if (yy < 0) {
+    	yy = 0;
+    }
     char.setAttribute('y', yy);
   }
   else if(window.event.keyCode == 39){
-    xx ++;
+    xx++;
+    if (xx > 9) {
+    	xx = 9;
+    }
     char.setAttribute('x', xx);
   }
   else if(window.event.keyCode == 40){
-    yy ++;
+    yy++;
+    if (yy > 9) {
+    	yy = 9;
+    }
     char.setAttribute('y', yy);
   }
 }
 
-setInterval(function(){
+/*setInterval(function(){
 	var char = document.querySelector(".player");
 	char.setAttribute('x', xx);
     char.setAttribute('y', yy);
-})
+})*/
