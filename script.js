@@ -5,7 +5,7 @@ var move_1 = 0, move_2 = 10, point_start_1, point_start_2 = 10;
 var move_5 = 9, move_6 = -1, point_start_5, point_start_6 = 10;
 var move_7 = 0, move_8 = 10, point_start_7, point_start_8 = 10;
 //random&enemy
-alert('Are You Ready')
+var name = prompt('Are You Ready Please enter you name.');
 var main1 = setInterval(function(){
 	x = getRandomInt(0, 9);
 	y = 0;
