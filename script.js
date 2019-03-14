@@ -29,7 +29,7 @@ var main1 = setInterval(function(){
 	document.querySelector('.random1').setAttribute('y',y);
 	move_1++;
 	move_2++;
-	}, 1500);
+	}, 1000);
 setTimeout(function(){
 	clearInterval(main1)
 	main1 = setInterval(function(){
@@ -55,8 +55,8 @@ setTimeout(function(){
 		document.querySelector('.random1').setAttribute('y',y);
 		move_1++;
 		move_2++;
-		}, 1000);
-}, 6000);
+		}, 750);
+}, 10000);
 setTimeout(function(){
 	clearInterval(main1)
 	main1 = setInterval(function(){
@@ -83,7 +83,7 @@ setTimeout(function(){
 		move_1++;
 		move_2++;
 		}, 500);
-}, 16000);
+}, 17500);
 setTimeout(function(){
 	clearInterval(main1)
 	main1 = setInterval(function(){
@@ -109,8 +109,8 @@ setTimeout(function(){
 		document.querySelector('.random1').setAttribute('y',y);
 		move_1++;
 		move_2++;
-		}, 200);
-}, 21000);
+		}, 250);
+}, 22500);
 var main2 = setInterval(function(){
 	x = getRandomInt(1, 10);
 	y = 9;
@@ -134,7 +134,7 @@ var main2 = setInterval(function(){
 	document.querySelector('.random2').setAttribute('y',y);
 	move_3--;
 	move_4--;
-	},1500)
+	},1000)
 setTimeout(function()
 {
 	clearInterval(main2)
@@ -161,8 +161,8 @@ setTimeout(function()
 	document.querySelector('.random2').setAttribute('y',y);
 	move_3--;
 	move_4--;
-	},1000)
-}, 6000)
+	},750)
+}, 10000)
 setTimeout(function()
 {
 	clearInterval(main2)
@@ -190,7 +190,7 @@ setTimeout(function()
 	move_3--;
 	move_4--;
 	},500)
-}, 16000)
+}, 17500)
 setTimeout(function()
 {
 	clearInterval(main2)
@@ -217,8 +217,8 @@ setTimeout(function()
 	document.querySelector('.random2').setAttribute('y',y);
 	move_3--;
 	move_4--;
-	},200)
-}, 21000)
+	},250)
+}, 22500)
 
 var main3 = setInterval(function(){
 	x = 9;
@@ -243,7 +243,7 @@ var main3 = setInterval(function(){
 	document.querySelector('.random3').setAttribute('y',y);
 	move_5--;
 	move_6--;
-},1500)
+},1000)
 setTimeout(function()
 {
 	clearInterval(main3)
@@ -270,8 +270,8 @@ setTimeout(function()
 	document.querySelector('.random3').setAttribute('y',y);
 	move_5--;
 	move_6--;
-	},1000)
-}, 6000)
+	},750)
+}, 10000)
 setTimeout(function()
 {
 	clearInterval(main3)
@@ -299,7 +299,7 @@ setTimeout(function()
 	move_5--;
 	move_6--;
 	},500)
-}, 16000)
+}, 17500)
 setTimeout(function()
 {
 	clearInterval(main3)
@@ -326,8 +326,8 @@ setTimeout(function()
 	document.querySelector('.random3').setAttribute('y',y);
 	move_5--;
 	move_6--;
-	},200)
-},21000)
+	},250)
+},22500)
 
 var main4 = setInterval(function(){
 	x = 0;
@@ -352,7 +352,7 @@ var main4 = setInterval(function(){
 	document.querySelector('.random4').setAttribute('y',y);
 	move_7++;
 	move_8++;
-	},1500)
+	},1000)
 setTimeout(function()
 {
 	clearInterval(main4)
@@ -379,8 +379,8 @@ setTimeout(function()
 	document.querySelector('.random4').setAttribute('y',y);
 	move_7++;
 	move_8++;
-	},1000)
-},6000)
+	},750)
+},10000)
 setTimeout(function()
 {
 	clearInterval(main4)
@@ -408,7 +408,7 @@ setTimeout(function()
 	move_7++;
 	move_8++;
 	},500)
-},16000)
+},17500)
 setTimeout(function()
 {
 	clearInterval(main4)
@@ -435,8 +435,8 @@ setTimeout(function()
 	document.querySelector('.random4').setAttribute('y',y);
 	move_7++;
 	move_8++;
-	},200)
-},21000)
+	},250)
+},22500)
 
 
 function getRandomInt(min, max) {
