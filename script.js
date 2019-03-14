@@ -500,9 +500,3 @@ document.onkeydown = function(){
     char.setAttribute('y', yy);
   }
 }
-
-/*setInterval(function(){
-	var char = document.querySelector(".player");
-	char.setAttribute('x', xx);
-    char.setAttribute('y', yy);
-})*/
