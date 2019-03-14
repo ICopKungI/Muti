@@ -30,7 +30,7 @@ div.random1{
     top:var(--y);
     background-color:red;
     left:var(--x);
-    transition:all .3s;
+    transition:.3s;
 }
 
 div.random2{
@@ -40,7 +40,7 @@ div.random2{
     top:var(--y);
     background-color:red;
     left:var(--x);
-    transition:all .3s;
+    transition:.3s;
 }
 
 div.random3{
@@ -50,7 +50,7 @@ div.random3{
     top:var(--y);
     background-color:red;
     left:var(--x);
-    transition:all .3s;
+    transition:.3s;
 }
 
 div.random4{
@@ -60,7 +60,7 @@ div.random4{
     top:var(--y);
     background-color:red;
     left:var(--x);
-    transition:all .3s;
+    transition:.3s;
 }
 
 div.enemy1{
@@ -70,7 +70,7 @@ div.enemy1{
     position:fixed;
     top:var(--y);
     left:var(--x);
-    transition:all .5s;
+    transition: 0s;
 }
 
 div.enemy2{
@@ -80,7 +80,7 @@ div.enemy2{
     position:fixed;
     top:var(--y);
     left:var(--x);
-    transition:all .5s;
+    transition: ;
 }
 
 div.enemy3{
@@ -90,7 +90,7 @@ div.enemy3{
     position:fixed;
     top:var(--y);
     left:var(--x);
-    transition:all .5s;
+    transition:.5s;
 }
 
 div.enemy4{
@@ -100,7 +100,7 @@ div.enemy4{
     position:fixed;
     top:var(--y);
     left:var(--x);
-    transition:all .5s;
+    transition:.5s;
 }
 
 div.enemy5{
@@ -110,7 +110,7 @@ div.enemy5{
     position:fixed;
     top:var(--y);
     left:var(--x);
-    transition:all .5s;
+    transition:.5s;
 }
 
 div.enemy6{
@@ -120,7 +120,7 @@ div.enemy6{
     position:fixed;
     top:var(--y);
     left:var(--x);
-    transition:all .5s;
+    transition:.5s;
 }
 
 div.enemy7{
@@ -130,7 +130,7 @@ div.enemy7{
     position:fixed;
     top:var(--y);
     left:var(--x);
-    transition:all .5s;
+    transition:.5s;
 }
 
 div.enemy8{
@@ -140,7 +140,7 @@ div.enemy8{
     position:fixed;
     top:var(--y);
     left:var(--x);
-    transition:all .5s;
+    transition:.5s;
 }
 
 div[x = '0']{--x: 0%;}
