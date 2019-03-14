@@ -83,7 +83,10 @@ div.random4{
 }
 
 div.enemy1{ /*top*/
-    background-color: blue;
+    background-image: url(https://media.giphy.com/media/2tPtEi60pqASE9mNQy/giphy.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width:var(--w);
     height:var(--h);
     position:fixed;
@@ -95,7 +98,10 @@ div.enemy1{ /*top*/
 div.enemy2{ /*top*/
     width:var(--w);
     height:var(--h);
-    background-color: blue;
+    background-image: url(https://media.giphy.com/media/2tPtEi60pqASE9mNQy/giphy.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     position:fixed;
     top:var(--y);
     left:var(--x);
