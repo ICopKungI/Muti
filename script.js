@@ -443,29 +443,13 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-//เช็คปุ่ม
 var timer = setInterval(function(){
 		// เพิ่มเวลา
 		++time;
 		// อัพเดทเวลา
 		theTime.innerText = time;
 },1000)
-/*document.onkeydown = function(i){
-	if(event.keyCode == 32){
-		timep();
-	}
-};
-function timep(){
-	cd = setInterval(function(){
-		// เพิ่มเวลา
-		time++;
-		// อัพเดทเวลา
-		updateTime();
-},1000)}
- function updateTime(){
-    	// แสดงเวลา
-    	theTime.innerText = time;
-}*/
+
 //###### Player Move ######
 var char = document.querySelector(".player");
 var xx = 5, yy = 5;
