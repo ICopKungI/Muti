@@ -22,6 +22,7 @@ h2{
     margin-left: 43.5%;
     margin-right: 43.5%;
     padding: 10px;
+    z-index: 1;
 }
 #map div{
     width:10%;
@@ -47,7 +48,7 @@ div.random1{
     height:var(--h);
     position:fixed;
     top:var(--y);
-    background-color:red;
+    /*background-color:red;*/
     left:var(--x);
     transition:.3s;
 }
@@ -57,7 +58,7 @@ div.random2{
     height:var(--h);
     position:fixed;
     top:var(--y);
-    background-color:red;
+    /*background-color:red;*/
     left:var(--x);
     transition:.3s;
 }
@@ -67,7 +68,7 @@ div.random3{
     height:var(--h);
     position:fixed;
     top:var(--y);
-    background-color:red;
+    /*background-color:red;*/
     left:var(--x);
     transition:.3s;
 }
@@ -77,7 +78,7 @@ div.random4{
     height:var(--h);
     position:fixed;
     top:var(--y);
-    background-color:red;
+    /*background-color:red;*/
     left:var(--x);
     transition:.3s;
 }
