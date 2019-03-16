@@ -505,7 +505,7 @@ document.onkeydown = function(){
 var rule = setInterval(function(){
 	document.querySelector('.enemy1').getAttribute('x')
 	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy1').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy1').getAttribute('y') ) {
-		alert('Lost!! Your Score Time : '+time);
+		alert('Lost!! '+name+ ' Score Time : '+time);
 		clearInterval(rule);
 		clearInterval(timer);
 		setInterval(function(){
@@ -516,7 +516,7 @@ var rule = setInterval(function(){
 		},)
 	}
 	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy2').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy2').getAttribute('y') ) {
-		alert('Lost!! Your Score Time : '+time);
+		alert('Lost!! '+name+ ' Score Time : '+time);
 		clearInterval(rule);
 		clearInterval(timer);
 		setInterval(function(){
@@ -527,7 +527,7 @@ var rule = setInterval(function(){
 		},)
 	}
 	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy3').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy3').getAttribute('y') ) {
-		alert('Lost!! Your Score Time : '+time);
+		alert('Lost!! '+name+ ' Score Time : '+time);
 		clearInterval(rule);
 		clearInterval(timer);
 		setInterval(function(){
@@ -538,7 +538,7 @@ var rule = setInterval(function(){
 		},)
 	}
 	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy4').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy4').getAttribute('y') ) {
-		alert('Lost!! Your Score Time : '+time);
+		alert('Lost!! '+name+ ' Score Time : '+time);
 		clearInterval(rule);
 		clearInterval(timer);
 		setInterval(function(){
@@ -549,7 +549,7 @@ var rule = setInterval(function(){
 		},)
 	}
 	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy5').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy5').getAttribute('y') ) {
-		alert('Lost!! Your Score Time : '+time);
+		alert('Lost!! '+name+ ' Score Time : '+time);
 		clearInterval(rule);
 		clearInterval(timer);
 		setInterval(function(){
@@ -560,7 +560,7 @@ var rule = setInterval(function(){
 		},)
 	}
 	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy6').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy6').getAttribute('y') ) {
-		alert('Lost!! Your Score Time : '+time);
+		alert('Lost!! '+name+ ' Score Time : '+time);
 		clearInterval(rule);
 		clearInterval(timer);
 		setInterval(function(){
@@ -571,7 +571,7 @@ var rule = setInterval(function(){
 		},)
 	}
 	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy7').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy7').getAttribute('y') ) {
-		alert('Lost!! Your Score Time : '+time);
+		alert('Lost!! '+name+ ' Score Time : '+time);
 		clearInterval(rule);
 		clearInterval(timer);
 		setInterval(function(){
@@ -582,7 +582,7 @@ var rule = setInterval(function(){
 		},)
 	}
 	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy8').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy8').getAttribute('y') ) {
-		alert('Lost!! Your Score Time : '+time);
+		alert('Lost!! '+name+ ' Score Time : '+time);
 		clearInterval(rule);
 		clearInterval(timer);
 		setInterval(function(){
