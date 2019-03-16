@@ -444,7 +444,7 @@ function getRandomInt(min, max) {
 }
 
 //เช็คปุ่ม
-setInterval(function(){
+var timer = setInterval(function(){
 		// เพิ่มเวลา
 		++time;
 		// อัพเดทเวลา
@@ -500,3 +500,96 @@ document.onkeydown = function(){
     char.setAttribute('y', yy);
   }
 }
+/* ### กฎเกม #### */
+
+var rule = setInterval(function(){
+	document.querySelector('.enemy1').getAttribute('x')
+	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy1').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy1').getAttribute('y') ) {
+		alert('Lost!! Your Score Time : '+time);
+		clearInterval(rule);
+		clearInterval(timer);
+		setInterval(function(){
+			clearInterval(main1);
+			clearInterval(main2);
+			clearInterval(main3);
+			clearInterval(main4);
+		},)
+	}
+	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy2').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy2').getAttribute('y') ) {
+		alert('Lost!! Your Score Time : '+time);
+		clearInterval(rule);
+		clearInterval(timer);
+		setInterval(function(){
+			clearInterval(main1);
+			clearInterval(main2);
+			clearInterval(main3);
+			clearInterval(main4);
+		},)
+	}
+	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy3').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy3').getAttribute('y') ) {
+		alert('Lost!! Your Score Time : '+time);
+		clearInterval(rule);
+		clearInterval(timer);
+		setInterval(function(){
+			clearInterval(main1);
+			clearInterval(main2);
+			clearInterval(main3);
+			clearInterval(main4);
+		},)
+	}
+	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy4').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy4').getAttribute('y') ) {
+		alert('Lost!! Your Score Time : '+time);
+		clearInterval(rule);
+		clearInterval(timer);
+		setInterval(function(){
+			clearInterval(main1);
+			clearInterval(main2);
+			clearInterval(main3);
+			clearInterval(main4);
+		},)
+	}
+	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy5').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy5').getAttribute('y') ) {
+		alert('Lost!! Your Score Time : '+time);
+		clearInterval(rule);
+		clearInterval(timer);
+		setInterval(function(){
+			clearInterval(main1);
+			clearInterval(main2);
+			clearInterval(main3);
+			clearInterval(main4);
+		},)
+	}
+	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy6').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy6').getAttribute('y') ) {
+		alert('Lost!! Your Score Time : '+time);
+		clearInterval(rule);
+		clearInterval(timer);
+		setInterval(function(){
+			clearInterval(main1);
+			clearInterval(main2);
+			clearInterval(main3);
+			clearInterval(main4);
+		},)
+	}
+	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy7').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy7').getAttribute('y') ) {
+		alert('Lost!! Your Score Time : '+time);
+		clearInterval(rule);
+		clearInterval(timer);
+		setInterval(function(){
+			clearInterval(main1);
+			clearInterval(main2);
+			clearInterval(main3);
+			clearInterval(main4);
+		},)
+	}
+	if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy8').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy8').getAttribute('y') ) {
+		alert('Lost!! Your Score Time : '+time);
+		clearInterval(rule);
+		clearInterval(timer);
+		setInterval(function(){
+			clearInterval(main1);
+			clearInterval(main2);
+			clearInterval(main3);
+			clearInterval(main4);
+		},)
+	}
+},)
