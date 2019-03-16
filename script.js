@@ -498,7 +498,7 @@ function start() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
-			again()
+			again();
 		}
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy2').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy2').getAttribute('y') ) {
 			clearInterval(rule);
@@ -509,7 +509,7 @@ function start() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
-			again()
+			again();
 		}
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy3').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy3').getAttribute('y') ) {
 			clearInterval(rule);
@@ -520,7 +520,7 @@ function start() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
-			again()
+			again();
 		}
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy4').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy4').getAttribute('y') ) {
 			clearInterval(rule);
@@ -531,7 +531,7 @@ function start() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
-			again()
+			again();
 		}
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy5').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy5').getAttribute('y') ) {
 			clearInterval(rule);
@@ -542,7 +542,7 @@ function start() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
-			again()
+			again();
 		}
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy6').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy6').getAttribute('y') ) {
 			clearInterval(rule);
@@ -553,7 +553,7 @@ function start() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
-			again()
+			again();
 		}
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy7').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy7').getAttribute('y') ) {
 			clearInterval(rule);
@@ -564,7 +564,7 @@ function start() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
-			again()
+			again();
 		}
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy8').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy8').getAttribute('y') ) {
 			clearInterval(rule);
@@ -575,7 +575,7 @@ function start() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
-			again()
+			again();
 		}
 	},)
 	function again() {
