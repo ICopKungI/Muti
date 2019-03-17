@@ -2,6 +2,7 @@ var storage = {};
 var storage_name = [];
 var storage_score = [];
 var point = 0;
+var s = 0;
 game();
 function game() {
 	var x, y, i, time = -1;
@@ -502,6 +503,7 @@ function game() {
 				clearInterval(main3);
 				clearInterval(main4);
 			},)
+
 			again();
 		}
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy2').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy2').getAttribute('y') ) {
@@ -587,10 +589,22 @@ function game() {
 		storage_name[point] = name;
 		storage_score[point] = time;
  		point++;
- 		sort();
+ 		//sort();
   		console.log(storage_name);
  		console.log(storage_score);
  		console.log(point);
+ 		/*ประวัติการเล่น*/
+ 		if(s<=9){
+ 			var para = document.createElement("P");
+  			var t = document.createTextNode(storage_name[s]+"   =   "+storage_score[s]+"   s.");
+  			para.appendChild(t);
+  			document.getElementById("history").appendChild(para);
+  			s++;
+ 		}
+    		
+    	
+ 		
+
 		alert('Lost!! '+name+ ' Score Time : '+time);
 		alert('Play again?\nPress Enter');
 		document.onkeydown = function(){
@@ -638,5 +652,12 @@ function game() {
             	}
         	}
     	}
+    	
+    	
+  		
+	
 	}
+	
+		
+	
 }
