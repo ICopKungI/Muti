@@ -1,4 +1,4 @@
-# Muti
+# Multi
 print("Input")
 
 printf("Input");
