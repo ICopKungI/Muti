@@ -14,8 +14,8 @@ body{
     background-size: 100%;
 }
 h2{
-	background-color: black;
-    color:white;
+	background-color: hsl(51, 100%, 65%);
+    color: hsl(240, 100%, 50%);
     border-radius: 8%;
     font-size:30px;
     position:fixed;
@@ -34,7 +34,7 @@ h2{
 div.player{
     width: 10%;
     height: 10vh;
-    background-image: url('http://i.imgur.com/bB2QuTT.gif');
+    background-image: url('https://media.giphy.com/media/3XERDO5v7CYva47vlA/giphy.gif');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
