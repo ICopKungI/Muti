@@ -589,7 +589,6 @@ function game() {
 		storage_name[point] = name;
 		storage_score[point] = time;
  		point++;
- 		//sort();
   		console.log(storage_name);
  		console.log(storage_score);
  		console.log(point);
@@ -601,17 +600,12 @@ function game() {
   			document.getElementById("history").appendChild(para);
   			s++;
  		}
-    		
-    	
- 		
+
 
 		alert('Lost!! '+name+ ' Score Time : '+time);
 		alert('Play again?\nPress Enter');
 		document.onkeydown = function(){
  			if(window.event.keyCode == 13){
- 				/*localStorage.setItem('data', JSON.stringify(check));
- 				var show = localStorage.getItem('data'); 
-				console.log(show);*/
  				document.querySelector('.enemy1').setAttribute('x',10);
 				document.querySelector('.enemy1').setAttribute('y',0);
 				document.querySelector('.enemy2').setAttribute('x',10);
@@ -635,29 +629,4 @@ function game() {
 			}
 		}
 	}
-	function sort() {
-		var score_cpy, name_cpy;
-		for (i = 0; i < point; ++i)
-    	{
-        	for (j = 0; j < point-1; ++j)
-        	{
-            	if (storage_score[j] < storage_score[j+1])
-            	{
-            		score_cpy = storage_score[j];
-            		storage_score[j] = storage_score[j+1];
-            		storage_score[j+1] = score_cpy;
-            		name_cpy = storage_name[j];
-            		storage_name[j] = storage_name[j+1];
-            		storage_name[j+1] = name_cpy;
-            	}
-        	}
-    	}
-    	
-    	
-  		
-	
-	}
-	
-		
-	
 }
