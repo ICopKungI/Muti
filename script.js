@@ -578,11 +578,30 @@ function start() {
 			again();
 		}
 	},)
+	/*เริ่มเล่นเกมอีกครั้ง*/
 	function again() {
 		alert('Lost!! '+name+ ' Score Time : '+time);
-		alert('\tPlay again?\n\tEnter');
+		alert('Play again?\nPress Enter');
 		document.onkeydown = function(){
  			if(window.event.keyCode == 13){
+ 				document.querySelector('.enemy1').setAttribute('x',10);
+				document.querySelector('.enemy1').setAttribute('y',0);
+				document.querySelector('.enemy2').setAttribute('x',10);
+				document.querySelector('.enemy2').setAttribute('y',10);
+				document.querySelector('.enemy3').setAttribute('x',10);
+				document.querySelector('.enemy3').setAttribute('y',9);
+				document.querySelector('.enemy4').setAttribute('x',10);
+				document.querySelector('.enemy4').setAttribute('y',-1);
+				document.querySelector('.enemy5').setAttribute('x',9);
+				document.querySelector('.enemy5').setAttribute('y',10);
+				document.querySelector('.enemy6').setAttribute('x',-1);
+				document.querySelector('.enemy6').setAttribute('y',10);
+				document.querySelector('.enemy7').setAttribute('x',0);
+				document.querySelector('.enemy7').setAttribute('y',10);
+				document.querySelector('.enemy8').setAttribute('x',10);
+				document.querySelector('.enemy8').setAttribute('y',10);
+				document.querySelector('.player').setAttribute('x',5);
+				document.querySelector('.player').setAttribute('y',5);
     			start();
 			}
 		}
