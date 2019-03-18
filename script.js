@@ -495,6 +495,7 @@ function game() {
 	var rule = setInterval(function(){
 		document.querySelector('.enemy1').getAttribute('x')
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy1').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy1').getAttribute('y') ) {
+			char = 0;
 			clearInterval(rule);
 			clearInterval(timer);
 			setInterval(function(){
