@@ -463,7 +463,6 @@ function game() {
 		var char = document.querySelector(".player");
   	  if(window.event.keyCode == 37){
 	    xx--;
-	    document.getElementById('alert').play();
     	if (xx < 0) {
 	    	xx = 0;
 	    }
@@ -471,7 +470,6 @@ function game() {
   	  }
   	  else if(window.event.keyCode == 38){
 	    yy--;
-	    document.getElementById('alert').play();
     	if (yy < 0) {
     		yy = 0;
     	}
@@ -479,7 +477,6 @@ function game() {
   	  }
   	  else if(window.event.keyCode == 39){
 	    xx++;
-	    document.getElementById('alert').play();
 	    if (xx > 9) {
     		xx = 9;
     	}
@@ -487,7 +484,6 @@ function game() {
   	  }
   	  else if(window.event.keyCode == 40){
     	yy++;
-    	document.getElementById('alert').play();
     	if (yy > 9) {
     		yy = 9;
     	}
@@ -499,7 +495,6 @@ function game() {
 	var rule = setInterval(function(){
 		document.querySelector('.enemy1').getAttribute('x')
 		if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy1').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy1').getAttribute('y') ) {
-			char = 0;
 			clearInterval(rule);
 			clearInterval(timer);
 			setInterval(function(){
