@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style type="text/css">
-        :root{
+    <style type="text/css">        :root{
     --w:10%;
     --h:10vh;
 }
@@ -240,10 +239,8 @@ div[y = '5']{--y: 50%;}
 div[y = '6']{--y: 60%;}
 div[y = '7']{--y: 70%;}
 div[y = '8']{--y: 80%;}
-div[y = '9']{--y: 90%;}
-    </style>
-    <script>
-        var storage = {};
+div[y = '9']{--y: 90%;}</style>
+    <script>var storage = {};
 var storage_name = [];
 var storage_score = [];
 var point = 0;
@@ -748,8 +745,8 @@ function game() {
                 clearInterval(main3);
                 clearInterval(main4);
             },)
+            setTimeout(function(){ again() },1000)
 
-            again();
         }
         if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy2').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy2').getAttribute('y') ) {
             clearInterval(rule);
@@ -760,7 +757,7 @@ function game() {
                 clearInterval(main3);
                 clearInterval(main4);
             },)
-            again();
+            setTimeout(function(){ again() },1000)
         }
         if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy3').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy3').getAttribute('y') ) {
             clearInterval(rule);
@@ -771,7 +768,7 @@ function game() {
                 clearInterval(main3);
                 clearInterval(main4);
             },)
-            again();
+            setTimeout(function(){ again() },1000)
         }
         if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy4').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy4').getAttribute('y') ) {
             clearInterval(rule);
@@ -782,7 +779,7 @@ function game() {
                 clearInterval(main3);
                 clearInterval(main4);
             },)
-            again();
+            setTimeout(function(){ again() },1000)
         }
         if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy5').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy5').getAttribute('y') ) {
             clearInterval(rule);
@@ -793,7 +790,7 @@ function game() {
                 clearInterval(main3);
                 clearInterval(main4);
             },)
-            again();
+            setTimeout(function(){ again() },1000)
         }
         if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy6').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy6').getAttribute('y') ) {
             clearInterval(rule);
@@ -804,7 +801,7 @@ function game() {
                 clearInterval(main3);
                 clearInterval(main4);
             },)
-            again();
+            setTimeout(function(){ again() },1000)
         }
         if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy7').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy7').getAttribute('y') ) {
             clearInterval(rule);
@@ -815,7 +812,7 @@ function game() {
                 clearInterval(main3);
                 clearInterval(main4);
             },)
-            again();
+            setTimeout(function(){ again() },1000)
         }
         if ( document.querySelector('.player').getAttribute('x') == document.querySelector('.enemy8').getAttribute('x') && document.querySelector('.player').getAttribute('y') == document.querySelector('.enemy8').getAttribute('y') ) {
             clearInterval(rule);
@@ -826,7 +823,7 @@ function game() {
                 clearInterval(main3);
                 clearInterval(main4);
             },)
-            again();
+            setTimeout(function(){ again() },1000)
         }
     },)
     /*เริ่มเล่นเกมอีกครั้ง*/
@@ -834,7 +831,6 @@ function game() {
         storage_name[point] = name;
         storage_score[point] = time;
         point++;
-        //sort();
         console.log(storage_name);
         console.log(storage_score);
         console.log(point);
@@ -847,16 +843,10 @@ function game() {
             s++;
         }
 
-
-
-
         alert('Lost!! '+name+ ' Score Time : '+time);
         alert('Play again?\nPress Enter');
         document.onkeydown = function(){
             if(window.event.keyCode == 13){
-                /*localStorage.setItem('data', JSON.stringify(check));
-                var show = localStorage.getItem('data');
-                console.log(show);*/
                 document.querySelector('.enemy1').setAttribute('x',10);
                 document.querySelector('.enemy1').setAttribute('y',0);
                 document.querySelector('.enemy2').setAttribute('x',10);
@@ -880,38 +870,13 @@ function game() {
             }
         }
     }
-    function sort() {
-        var score_cpy, name_cpy;
-        for (i = 0; i < point; ++i)
-        {
-            for (j = 0; j < point-1; ++j)
-            {
-                if (storage_score[j] < storage_score[j+1])
-                {
-                    score_cpy = storage_score[j];
-                    storage_score[j] = storage_score[j+1];
-                    storage_score[j+1] = score_cpy;
-                    name_cpy = storage_name[j];
-                    storage_name[j] = storage_name[j+1];
-                    storage_name[j+1] = name_cpy;
-                }
-            }
-        }
-
-
-
-
-    }
-
-
-
-}
-    </script>
+}</script>
     <title>This is a Game</title>
     <h2>Time : <span id="theTime">0</span> </h2><br>
     <div id="history">
         <h3>History</h3>
     </div>
+    <EMBED src = "The Fat Rat-Unity.mp3" hidden = "True" autostart = "Yes" loop = "True">
 </head>
 <body>
 
