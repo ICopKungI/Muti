@@ -463,6 +463,7 @@ function game() {
 		var char = document.querySelector(".player");
   	  if(window.event.keyCode == 37){
 	    xx--;
+	    document.getElementById('alert').play();
     	if (xx < 0) {
 	    	xx = 0;
 	    }
@@ -470,6 +471,7 @@ function game() {
   	  }
   	  else if(window.event.keyCode == 38){
 	    yy--;
+	    document.getElementById('alert').play();
     	if (yy < 0) {
     		yy = 0;
     	}
@@ -477,6 +479,7 @@ function game() {
   	  }
   	  else if(window.event.keyCode == 39){
 	    xx++;
+	    document.getElementById('alert').play();
 	    if (xx > 9) {
     		xx = 9;
     	}
@@ -484,6 +487,7 @@ function game() {
   	  }
   	  else if(window.event.keyCode == 40){
     	yy++;
+    	document.getElementById('alert').play();
     	if (yy > 9) {
     		yy = 9;
     	}
