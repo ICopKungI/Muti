@@ -1,5 +1,6 @@
 <h1> Sixsax </h1>
 
+![GAME PICTURE](https://user-images.githubusercontent.com/42908510/58336759-8be42d80-7e6e-11e9-9942-c6fa8d84b216.png)
 
 
 
